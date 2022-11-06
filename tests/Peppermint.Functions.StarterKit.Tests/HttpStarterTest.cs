@@ -1,4 +1,4 @@
-using azure_functions_starter;
+using Peppermint.Functions.StarterKit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.Extensions.Primitives;
@@ -8,7 +8,7 @@ using Peppermint.Functions.StarterKit.Tests.Commons;
 namespace Peppermint.Functions.StarterKit.Tests
 {
     [TestClass]
-    public class StarterTest : FunctionTest<StarterFunction>
+    public class HttpStarterTest : FunctionTest<HttpStarterFunction>
     {
         [TestMethod]
         public void TestStarter()

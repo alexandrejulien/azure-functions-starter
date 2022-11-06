@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace azure_functions_starter
+namespace Peppermint.Functions.StarterKit
 {
-    public class StarterFunction
+    public class HttpStarterFunction
     {
         [FunctionName("Starter")]
         public async Task<IActionResult> Run(

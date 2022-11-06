@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace azure_functions_starter
+namespace Peppermint.Functions.StarterKit
 {
     public class Startup : FunctionsStartup
     {

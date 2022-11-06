@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\azure-functions-starter\azure-functions-starter.csproj" />
+    <ProjectReference Include="..\..\src\azure-functions-starter\Peppermint.Functions.StarterKit.csproj" />
   </ItemGroup>
 
 </Project>
