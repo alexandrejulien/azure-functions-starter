@@ -10,10 +10,10 @@ using Newtonsoft.Json;
 
 namespace azure_functions_starter
 {
-    public static class StarterFunction
+    public class StarterFunction
     {
         [FunctionName("Starter")]
-        public static async Task<IActionResult> Run(
+        public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
