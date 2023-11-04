@@ -5,9 +5,17 @@
     <RootNamespace>azure_functions_starter</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Options\**" />
+    <EmbeddedResource Remove="Options\**" />
+    <None Remove="Options\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Functions.Analyzers" Version="1.0.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.3" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Peppermint.Functions.StarterKit.Infrastructure.Core\Peppermint.Functions.Infrastructure.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
@@ -17,12 +25,5 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Configuration\" />
-    <Folder Include="Options\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Peppermint.Functions.Core\Peppermint.Functions.Core.csproj" />
   </ItemGroup>
 </Project>

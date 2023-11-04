@@ -8,10 +8,19 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Peppermint.Functions.StarterKit
+namespace azure_functions_starter.Functions
 {
+    /// <summary>
+    /// Sample of Http Starter function.
+    /// </summary>
     public class HttpStarterFunction
     {
+        /// <summary>
+        /// Runs the specified req.
+        /// </summary>
+        /// <param name="req">The req.</param>
+        /// <param name="log">The log.</param>
+        /// <returns>Action result.</returns>
         [FunctionName("Starter")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
