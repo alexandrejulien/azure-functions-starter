@@ -5,7 +5,11 @@ using Peppermint.Functions.Infrastructure.DependencyInjection;
 
 namespace Peppermint.Functions.StarterKit.Tests.Commons
 {
-    public class FunctionTest<TFunction>
+    /// <summary>
+    /// Abstract class function test.
+    /// </summary>
+    /// <typeparam name="TFunction">The type of the function.</typeparam>
+    public abstract class FunctionTest<TFunction>
         where TFunction : class
     {
         /// <summary>
@@ -32,12 +36,7 @@ namespace Peppermint.Functions.StarterKit.Tests.Commons
         /// <value>
         /// The function.
         /// </value>
-        public TFunction Function {
-            get 
-            { 
-                return provider.GetService<TFunction>(); 
-            } 
-        }
+        public TFunction Function => provider.GetService<TFunction>();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionTest{TFunction}"/> class.
@@ -46,7 +45,7 @@ namespace Peppermint.Functions.StarterKit.Tests.Commons
         {
             Logger = Mock.Of<ILogger>();
             RegisterServices();
-            BuildServices();
+            provider = servicesCollection.BuildServiceProvider();
         }
 
         /// <summary>
@@ -57,14 +56,6 @@ namespace Peppermint.Functions.StarterKit.Tests.Commons
             servicesCollection.AddSingleton<ILogger>(Logger);
             servicesCollection.AddTransient<TFunction>();
             servicesCollection.AddStarterKit();
-        }
-
-        /// <summary>
-        /// Builds the services.
-        /// </summary>
-        private void BuildServices()
-        {
-            provider = servicesCollection.BuildServiceProvider();
         }
     }
 }

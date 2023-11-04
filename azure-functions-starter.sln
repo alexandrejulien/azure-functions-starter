@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peppermint.Functions.StarterKit", "src\Peppermint.Functions.StarterKit\Peppermint.Functions.StarterKit.csproj", "{FEFD8493-37FA-4282-9B4C-5FAAC42B1649}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Src", "1 - Src", "{C949D9DE-02B0-4875-B56D-D5D907C266B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Sources", "1 - Sources", "{C949D9DE-02B0-4875-B56D-D5D907C266B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Tests", "2 - Tests", "{3E6E6C63-D7B2-4C1B-849B-BCD35B76201C}"
 EndProject
@@ -16,6 +16,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Function", "1.1 - Function", "{F0377722-1A2F-4A85-BABA-046DC9B61CE1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peppermint.Functions.Infrastructure.Core", "src\Peppermint.Functions.StarterKit.Infrastructure.Core\Peppermint.Functions.Infrastructure.Core.csproj", "{A6C50996-874B-4E41-8EE5-2C2536342415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Misc", "3 - Misc", "{9730FF72-9EA5-466D-AFD0-1ED0F0552AD0}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
