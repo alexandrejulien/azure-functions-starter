@@ -19,7 +19,6 @@ namespace Peppermint.Functions.Infrastructure.DependencyInjection
         /// <returns>Service collection.</returns>
         public static IServiceCollection AddLogger(this IServiceCollection services)
         {
-            services.AddLogging();
             return services;
         }
     }
