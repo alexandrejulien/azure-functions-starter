@@ -3,22 +3,22 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <!-- <a href="https://github.com/alexandrejulien/dapr-nblocks">
+  <!-- <a href="https://github.com/alexandrejulien/azure-functions-starter">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-<h3 align="center">Peppermint Azure Functions starter kit</h3>
+<h3 align="center">Peppermint Azure Functions starter kit.</h3>
 
   <p align="center">
     Peppermint function is a simple boilerplate / starter kit for Azure Function SDK as a template.
     This .NET template give a simple example of an HTTP function with IoC and unit tests.
     <br />
-    <a href="https://github.com/alexandrejulien/dapr-nblocks"><strong>Explore the docs �</strong></a>
+    <a href="https://github.com/alexandrejulien/azure-functions-starter"><strong>Explore the docs �</strong></a>
     <br />
     <br />    �
-    <a href="https://github.com/alexandrejulien/dapr-nblocks/issues">Report Bug</a>
+    <a href="https://github.com/alexandrejulien/azure-functions-starter/issues">Report Bug</a>
     �
-    <a href="https://github.com/alexandrejulien/dapr-nblocks/issues">Request Feature</a>
+    <a href="https://github.com/alexandrejulien/azure-functions-starter/issues">Request Feature</a>
   </p>
 </div>
 
@@ -106,7 +106,7 @@ Coming soon ...
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/alexandrejulien/dapr-nblocks/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/alexandrejulien/azure-functions-starter/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
@@ -151,5 +151,3 @@ Project Link: [https://github.com/alexandrejulien/azure-function-starter](https:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-
