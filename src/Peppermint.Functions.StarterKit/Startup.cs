@@ -1,7 +1,9 @@
 ﻿using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using Peppermint.Functions.Infrastructure.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +23,8 @@ namespace Peppermint.Functions.StarterKit
         /// <param name="builder">The builder.</param>
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddStarterKit();
+            var context = builder.GetContext();
+            builder.Services.AddBootstrap(context.Configuration);
         }
     }
 }

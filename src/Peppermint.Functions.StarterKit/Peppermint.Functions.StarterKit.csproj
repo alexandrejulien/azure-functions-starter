@@ -1,14 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
-    <RootNamespace>azure_functions_starter</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Peppermint Azure Functions StarterKit</Title>
+    <Description>A simple startup solution for Azure Function with C# .NET</Description>
+    <Copyright>Peppermint | Alexandre Julien</Copyright>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="Options\**" />
-    <EmbeddedResource Remove="Options\**" />
-    <None Remove="Options\**" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Functions.Analyzers" Version="1.0.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
@@ -19,7 +18,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Peppermint.Functions.StarterKit.Infrastructure.Core\Peppermint.Functions.Infrastructure.Core.csproj" />
+    <ProjectReference Include="..\Peppermint.Functions.StarterKit.Infrastructure\Peppermint.Functions.StarterKit.Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

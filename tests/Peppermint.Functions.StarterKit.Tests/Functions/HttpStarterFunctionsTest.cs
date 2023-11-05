@@ -1,9 +1,8 @@
-using azure_functions_starter.Functions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.Extensions.Primitives;
 using Moq;
-using Peppermint.Functions.StarterKit.Tests.Commons;
+using Peppermint.Functions.StarterKit.Tests.Abstracts;
 using System.Text;
 
 namespace Peppermint.Functions.StarterKit.Tests.Functions
@@ -14,7 +13,7 @@ namespace Peppermint.Functions.StarterKit.Tests.Functions
     /// <seealso cref="FunctionTest&lt;HttpStarterFunction&gt;" />
     [TestClass]
     public class HttpStarterFunctionsTest
-        : FunctionTest<HttpStarterFunction>
+        : BaseFunctionTest<HttpStarterFunction>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="HttpStarterFunctionsTest"/> class.

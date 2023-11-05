@@ -1,0 +1,13 @@
+{
+    "author": "Alexandre Julien",
+    "classifications": [ "Functions" ], 
+    "name": "Peppermint Azure Functions Starter Kit",
+    "identity": "Peppermint.Functions.StarterKit",         
+    "shortName": "azure-functions-starter-kit",
+    "tags": {
+      "language": "C#",
+      "type":"solution"
+    },
+    "sourceName": "Peppermint.Functions",
+    "preferNameDirectory": true
+  }
