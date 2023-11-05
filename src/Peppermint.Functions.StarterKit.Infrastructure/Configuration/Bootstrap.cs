@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,15 @@ namespace Peppermint.Functions.Infrastructure.DependencyInjection
     public static class Bootstrap
     {
         /// <summary>
-        /// Adds the bootstraper.
+        /// Adds the bootstrap.
         /// </summary>
         /// <param name="services">The services.</param>
-        /// <returns></returns>
-        public static IServiceCollection AddBootstrap(this IServiceCollection services)
+        /// <param name="configuration">The configuration.</param>
+        /// <returns>Service collection.</returns>
+        public static IServiceCollection AddBootstrap(this IServiceCollection services,
+                                                           IConfiguration configuration)
         {
-            services.AddLogger();
+            services.AddLogger(configuration);
             return services;
         }
     }

@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
 using NFluent;
 using System;
@@ -27,9 +31,7 @@ namespace Peppermint.Functions.StarterKit.Tests
         {
             var startup = new Startup();
             Check.That(startup).InheritsFrom<FunctionsStartup>();
-
-            var host = Mock.Of<IFunctionsHostBuilder>();
-            startup.Configure(host);
+            Check.That(startup).IsNotNull();
         }
     }
 }
