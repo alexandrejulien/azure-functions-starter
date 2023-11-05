@@ -78,22 +78,24 @@ Coming soon ...
 
 ### Prerequisites
 
-You might have a .NET 6 SDK or .NET 7 SDK.
+You might have a .NET 6 SDK and Azure Function v4 SDK.
 
 ### Installation
 
-Coming soon ...
+Git checkout and install template.
 
+```powershell
+dotnet new install .
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 ```powershell
-dotnet new  azure-functions-starter-kit -n "Enterprise.MyFunction"
+dotnet new azure-functions-starter-kit -n "Enterprise.MyFunction"
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
