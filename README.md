@@ -92,7 +92,9 @@ Coming soon ...
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Coming soon ...
+```powershell
+dotnet new  azure-functions-starter-kit -n "Enterprise.MyFunction"
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
