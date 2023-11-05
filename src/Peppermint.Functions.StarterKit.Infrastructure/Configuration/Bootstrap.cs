@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 namespace Peppermint.Functions.Infrastructure.DependencyInjection
 {
     /// <summary>
-    /// Starter kit.
+    /// Bootstraper.
     /// </summary>
-    public static class StarterKit
+    public static class Bootstrap
     {
         /// <summary>
-        /// Adds the starter kit.
+        /// Adds the bootstraper.
         /// </summary>
         /// <param name="services">The services.</param>
         /// <returns></returns>
-        public static IServiceCollection AddStarterKit(this IServiceCollection services)
+        public static IServiceCollection AddBootstrap(this IServiceCollection services)
         {
             services.AddLogger();
             return services;

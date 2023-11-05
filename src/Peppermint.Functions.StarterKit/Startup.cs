@@ -21,7 +21,7 @@ namespace Peppermint.Functions.StarterKit
         /// <param name="builder">The builder.</param>
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddStarterKit();
+            builder.Services.AddBootstrap();
         }
     }
 }

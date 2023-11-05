@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 -  Infrastructure", "1.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Function", "1.1 - Function", "{F0377722-1A2F-4A85-BABA-046DC9B61CE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peppermint.Functions.Infrastructure.Core", "src\Peppermint.Functions.StarterKit.Infrastructure.Core\Peppermint.Functions.Infrastructure.Core.csproj", "{A6C50996-874B-4E41-8EE5-2C2536342415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peppermint.Functions.StarterKit.Infrastructure", "src\Peppermint.Functions.StarterKit.Infrastructure\Peppermint.Functions.StarterKit.Infrastructure.csproj", "{A6C50996-874B-4E41-8EE5-2C2536342415}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Misc", "3 - Misc", "{9730FF72-9EA5-466D-AFD0-1ED0F0552AD0}"
 	ProjectSection(SolutionItems) = preProject

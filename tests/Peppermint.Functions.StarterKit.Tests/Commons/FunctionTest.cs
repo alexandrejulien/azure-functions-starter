@@ -55,7 +55,7 @@ namespace Peppermint.Functions.StarterKit.Tests.Commons
         {
             servicesCollection.AddSingleton<ILogger>(Logger);
             servicesCollection.AddTransient<TFunction>();
-            servicesCollection.AddStarterKit();
+            servicesCollection.AddBootstrap();
         }
     }
 }
