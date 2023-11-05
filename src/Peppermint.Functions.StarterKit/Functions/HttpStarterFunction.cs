@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace azure_functions_starter.Functions
+namespace Peppermint.Functions.StarterKit
 {
     /// <summary>
     /// Sample of Http Starter function.
